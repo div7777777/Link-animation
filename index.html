@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 1200px;
+    background: linear-gradient(90deg, #150050, #610094 );   
+}
+/* profil */
+.profil{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 60px;
+}
+.prof{
+   border-radius: 50%;
+   height: 100px;
+   width: 100px;
+}
+/* contacte */
+.contacte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #610094 , skyblue);
+    border-radius: 50px;
+    height: 80px;
+    width: 300px;
+}
+.cont{
+    border-radius: 40px;
+    border: 1.5px solid whitesmoke;
+    height: 55px;
+    width: 55px;
+}
+/* titre */
+.title{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+.h1{
+  color: white;
+  font-size: 40px;
+}
+/* social */
+.font{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.nam{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;      
+    margin: 70px; 
+    background: whitesmoke;
+    height: 600px;
+    width: 140px;
+    border-radius: 70px;
+    animation: 6s infinite neon;
+}
+@keyframes neon{
+    50%{
+        background: #150050;
+    }
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.it{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: whitesmoke;
+    padding: 50px;
+    animation: 6s infinite opacity;
+}
+@keyframes opacity{
+    0%{
+        opacity: 1;
+        font-size: 20px;
+    }
+    50%{
+        opacity: 0;
+        font-size: 0;  
+    }
+    100%{
+        opacity: 1;
+        font-size: 20px;
+    }
+}
+.item{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 50%;
+   animation: 6s infinite glisse; 
+}
+
+@keyframes glisse {
+     0%{
+         transform: translateX(0);
+     }
+    50%{
+        transform: translateX(200px);      
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.h3{
+    color: whitesmoke;
+}
+    </style>
+    <!-- profil -->
+    <div class="profil">
+        <img class="prof" src="profil.png" alt="">
+    </div>
+    <!-- contacte -->
+    <div class="contacte">
+    <div class="contact">
+     <img class="cont" src="b.png" alt="">
+     <img class="cont" src="c.png" alt="">
+     <img  class="cont" src="a.png" alt="">
+    
+     
+     </div>
+    </div>
+    <!-- titre -->
+    <div class="title">
+        <h1 class="h1"> Social LinK</h1>
+        <img class="imgh1" src="https://img.icons8.com/ios/50/ffffff/centralized-network.png"/>
+    </div>
+    <!-- social -->
+    <div class="font">
+        <div class="social">
+        <div class="items"><img class="item" src="1.png" alt=""></div>
+        <div class="items"><img class="item" src="2.png" alt=""></div>
+        <div class="items"><img class="item" src="3.png" alt=""></div>
+        <div class="items"> <img class="item" src="4.png" alt=""> </div>
+        <div class="items"><img  class="item" src="5.png" alt=""></div>
+        </div>
+        <div class="nam">
+            <h2 class="it"> Instagram</h2>
+            <h2 class="it"> Facebook</h2>
+            <h2 class="it"> TikTok</h2>
+            <h2 class="it"> Snapshat</h2>
+            <h2 class="it"> Mail</h2>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <h3 class="h3">Copyrigth22 HD</h3>
+
+    </footer>
+
+    
+</body>
+</html>
